@@ -75,6 +75,16 @@ input {
 	border-radius: 40px;
 	margin: 30px 10px;
 	border: 2px solid #dddddd;
+	padding-left: 20px;
+}
+.content .row {
+	padding: 62px 0;
+}
+.form_2 {
+	padding: 80px 0;
+}
+.form_block {
+	padding-top: 50px;
 }
 .resp_foto_top{
 	max-width: 100%;
@@ -139,4 +149,40 @@ box-shadow: 0px 16px 29px 6px rgba(242,154,11,0.51);
 }
 .footer {
 	padding: 20px 0;
+}
+.grishaeva{
+	background: url(../img/foto_bg.png)right bottom no-repeat;
+	    background-size: contain;
+	    margin-top: 100px;
+	    margin-bottom: 100px;
+}
+.content_text_sm {
+		font-family: Gilroy-UltraLight; 
+	font-size: 14px;
+}
+.grishaeva h3{
+ font-size: 35px !important;
+}
+.grishaeva .content_text {
+	font-size: 18px;
+	margin: 30px 0;
+}
+.grishaeva .content_text_sm {
+	font-size: 15px;
+	margin: 30px 0;
+}
+.ajax_module {
+	text-align: center;
+	font-size: 40px;
+	padding: 100px 0;
+}
+.video_block {
+	margin: 40px auto;
+
+}
+.content {
+    background: url(../img/lines.png)center center no-repeat;
+    background-size: 78%;
+    background-position-x: 175px;
+    background-position-y: 100px;
 }
