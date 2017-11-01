@@ -8,6 +8,7 @@
 
     <link href="css/style.css" rel="stylesheet">
         <link href="css/media.css" rel="stylesheet">
+       <link href="css/style2.css" rel="stylesheet"> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,14 +60,601 @@
 
       
         <section class="ajax_module">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                ОПРОСНИК
-              </div>
-            </div>
-          </div>
-        </section>
+ <section id="forms-step">
+ <div style="width: 1170px !important;"  class="container">
+     <div class="row">
+         <div class="col-md-12">
+
+             <div  class="tform" id='tform'>
+
+                 <form class="form1 " method="post" action="ajax.php" enctype="multipart/form-data">
+
+                     <div class="step" style="display: block;">
+                         <h4 class="main-title-form">Ответьте на 14 простых вопросов, для получения максимально точных предложений</h4>
+                         <div class="step-box">
+                             <div class="progress">
+                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width:2%">2%</div>
+                             </div>
+                             <span class="title-step">Шаг 1. Выберите конструкцию кухни: (Жмите на иконки для выбора)</span>
+                             <div class="row col-md-7 step1">
+                                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option1" name="level1" value="Угловая-Л (Г-образная)" onclick="openbox('box'); ">
+                                         <label for="option1">Угловая-Л (Г-образная)</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh1.png" alt="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option2" name="level1" value="Однорядная (Прямая)" onclick="openbox('box'); ">
+                                         <label for="option2">Однорядная (Прямая)</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh2.png" alt="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option3" name="level1" value="Угловая-П (Г-образная)" onclick="openbox('box'); ">
+                                         <label for="option3">Угловая-П (Г-образная)</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh0.png" alt="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option4" name="level1" value="П-образная" onclick="openbox('box'); ">
+                                         <label for="option4">П - образная</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh3.png" alt="">
+                                     </div>
+                                 </div>
+                                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option5" name="level1" value="Двухлинейная" onclick="openbox('box'); ">
+                                         <label for="option5">Двухлинейная</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh5.png" alt="">
+                                     </div>
+                                 </div>
+                 
+                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option6" name="level1" value="Кухня с островом" onclick="openbox('box'); ">
+                                         <label for="option6">Кухня с островом</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh4.png" alt="">
+                                     </div>
+                                 </div>
+                 
+                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option7" name="level1" value="G - образная" onclick="openbox('box'); ">
+                                         <label for="option7">G - образная</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh7.png" alt="">
+                                     </div>
+                                 </div>
+                 
+                                 <div class="col-md-4 col-sm-4">
+                                     <div class="select-box">
+                                         <input type="radio" id="option8" name="level1" value="Другая конструкция" onclick="openbox('box'); ">
+                                         <label for="option8">Другая конструкция</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                         <img src="img/sh6.png" alt="">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-md-5">
+               <img id="img_step1" src="img/1/9.jpg" alt=""/>
+              
+               </div>
+               <div class="box-btn">
+               <a style="display: none;" class="main-btn final">В конец</a>
+                                 <a id="box" style="display: none;" class="main-btn next">Следующий шаг</a>
+                                 <span class="help">1 из 14</span>
+                             </div>
+                         </div>
+                     </div>
+
+        
+                     <div class="step step2" style="display: none;">
+                         <h4 class="main-title-form">Ответьте на 14 простых вопросов, для получения максимально точных предложений</h4>
+                         <div class="step-box">
+                             <div class="progress">
+                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width:7%">7%</div>
+                             </div>
+               
+               <div class="row col-md-7 step2">
+                 
+                             <span class="title-step">Шаг 2.1 Укажите площадь вашего кухонного помещения: <br>(Если у вас нет точных размеров, вы можете пропустить этот шаг)</span>
+                             <div class="row">
+
+                                 <div class="col-md-12">
+                                     <input type="text" class="main-inpt" placeholder="9.1" name="level2-1" onclick="openbox('box2');">
+                                     <label class="main-lb">квадратных метров</label>
+                                 </div>
+                             </div>
+
+               <br>
+               <span class="title-step">Шаг 2.2 Укажите размеры кухни: <br>(Если у вас нет точных размеров, вы можете пропустить и этот шаг)</span>
+                             <div class="row">
+
+                                 <div class="col-md-4">
+                                     <input type="text" class="main-inpt" placeholder="3.2" name="level2-2" onclick="openbox('box2');">
+                                     <label class="main-lb">Длина кух. гарнитура, м</label>
+                                 </div>
+                 
+                 <div class="col-md-4">
+                                     <input type="text" class="main-inpt" placeholder="0.6" name="level2-3" onclick="openbox('box2');">
+                                     <label class="main-lb">Ширина столешницы, м</label>
+                                 </div>
+                 
+                 <div class="col-md-4">
+                                     <input type="text" class="main-inpt" placeholder="2.3" name="level2-4" onclick="openbox('box2');">
+                                     <label class="main-lb">Высота кух. гарнитура, м</label>
+                                 </div>
+                             </div>
+              
+                <br>
+               <div class="select-box check-box">
+                                         <input type="checkbox" id="option1_2" name="level2-5" value="Необходим выезд дизайнера">
+                                         <label for="option1_2">Отметьте этот пункт если необходимо сделать правильный замер дизайнером;</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                   
+                                     </div>
+               
+               </div>
+               
+                <div class="row col-md-5 step2">
+                 <img id="img_step2" src="img/2/1.jpg" alt=""/>
+                </div>
+                <div class="row col-md-12 ">
+              
+               
+                </div>
+                             <div class="box-btn">
+                 <a style="display: block;" class="main-btn back">Шаг назад</a>
+<a style="display: none;" class="main-btn final">В конец</a>
+                                 <a id="box2" style="display: block;" class="main-btn next">Следующий шаг</a>
+                                 <span class="help">2 из 14</span>
+                             </div>
+                         </div>
+                     </div>
+
+           
+               <div class="step" style="display: none;">
+                         <h4 class="main-title-form">Ответьте на 14 простых вопросов, для получения максимально точных предложений</h4>
+                         <div class="step-box">
+                             <div class="progress">
+                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width:12%">12%</div>
+                             </div>
+                             <span class="title-step">Шаг 3. Выберите стиль кухни: Расскажите нам какие кухни вам нравятся? <br>(Возможен выбор нескольких вариантов. А в слайдере можно полистать примеры стилей.)
+</span>
+                             <div class="row col-md-7 step3">
+                                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option11" name="level3-1" value="Прованс" onclick="openbox('box3');">
+                                         <label for="option11">Прованс (французский стиль)</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                      
+                                     </div>
+                                 </div>
+                               <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option21" name="level3-2" value="Лофт" onclick="openbox('box3');">
+                                         <label for="option21">Стиль лофт</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                        
+                                     </div>
+                                 </div>
+                                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option31" name="level3-3" value="Кантри" onclick="openbox('box3');">
+                                         <label for="option31">Стиль кантри</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                      
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option41" name="level3-4" value="Модерн" onclick="openbox('box3');">
+                                         <label for="option41">Модерн (Современный стиль)</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                  
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option51" name="level3-5" value="Ретро" onclick="openbox('box3');">
+                                         <label for="option51">Стиль ретро</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                               <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option61" name="level3-6" value="Английский" onclick="openbox('box3');">
+                                         <label for="option61">Английский стиль</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+
+                 
+                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option71" name="level3-7" value="Скандинавский" onclick="openbox('box3');">
+                                         <label for="option71">Скандинавский стиль</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                  
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option81" name="level3-8" value="Итальянский" onclick="openbox('box3');">
+                                         <label for="option81">Итальянский стиль</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option91" name="level3-9" value="Минимализм" onclick="openbox('box3');">
+                                         <label for="option91">Минимализм</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                 
+                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option101" name="level3-10" value="Арт-деко" onclick="openbox('box3');">
+                                         <label for="option101">Арт-деко</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                  
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option111" name="level3-11" value="Морской" onclick="openbox('box3');">
+                                         <label for="option111">Морской стиль</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                               <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option121" name="level3-12" value="Классический" onclick="openbox('box3');">
+                                         <label for="option121">Классический стиль</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option131" name="level3-13" value="Хай-тек" onclick="openbox('box3');">
+                                         <label for="option131">Хай-тек стиль</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option141" name="level3-14" value="Стиль эко" onclick="openbox('box3');">
+                                         <label for="option141">Стиль эко (приближенный к природе)</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+
+                 
+                             </div>
+               
+               
+<div class="row col-md-5 step3">              
+<div class="slider-box">
+    <div class="slider">  
+        <img src="img/3/1.jpg" alt="">
+        <img src="img/3/2.jpg" alt="">
+        <img src="img/3/3.jpg" alt="">
+        <img src="img/3/4.jpg" alt="">
+        <img src="img/3/5.jpg" alt="">
+    <img src="img/3/6.jpg" alt="">
+    <img src="img/3/7.jpg" alt="">
+    <img src="img/3/8.jpg" alt="">
+    <img src="img/3/9.jpg" alt="">
+    <img src="img/3/10.jpg" alt="">
+    <img src="img/3/11.jpg" alt="">
+    <img src="img/3/12.jpg" alt="">
+    <img src="img/3/13.jpg" alt="">
+    <img src="img/3/14.jpg" alt="">
+     </div>
+    <div class="prev"></div>
+    <div class="next"></div>
+</div> 
+</div> 
+
+          <div class="row col-md-12 mix">      
+              <div class="select-box check-box">
+                            <input type="checkbox" id="option1_3" name="level3-15" value="Необходима консультация" onclick="openbox('box3');">
+
+                            <label for="option1_3">Отметьте этот пункт если необходима консультация по данному вопросу;</label>
+                            <div class="check"><div class="inside"></div></div>
+                                      
+                                     </div>  
+                    </div>   
+                
+               
+                    <div class="box-btn">
+                 <a style="display: block;" class="main-btn back">Шаг назад</a>
+<a style="display: none;" class="main-btn final">В конец</a>
+                                 <a id="box3" style="display: none;" class="main-btn next">Следующий шаг</a>
+                                 <span class="help">3 из 14</span>
+                             </div>
+                         </div>
+                     </div>
+           
+   
+               <div class="step" style="display: none;">
+               <h4 class="main-title-form"> Ответьте на 14 простых вопросов, для получения максимально точных предложений</h4>
+                         <div class="step-box">
+                             <div class="progress">
+                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width:21%">21%</div>
+                             </div>
+                             <span class="title-step">Шаг 4. А какие цвета вы предпочитаете в кухне?<br>(Возможен выбор нескольких вариантов. А в слайдере можно глянуть примеры кухонь в цвете.)
+</span>
+                             <div class="row col-md-7 step4">
+                                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option12" name="level4-1" value="Красный" onclick="openbox('box4');">
+                                         <label for="option12">Красный</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                      
+                                     </div>
+                                 </div>
+                               <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option22" name="level4-2" value="Бежевый" onclick="openbox('box4');">
+                                         <label for="option22">Бежевый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                        
+                                     </div>
+                                 </div>
+                                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option32" name="level4-3" value="Бирюзовый" onclick="openbox('box4');">
+                                         <label for="option32">Бирюзовый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                      
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option42" name="level4-4" value="Бордовый" onclick="openbox('box4');">
+                                         <label for="option42">Бордовый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                  
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option52" name="level4-5" value="Венге" onclick="openbox('box4');">
+                                         <label for="option52">Венге</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                               <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option62" name="level4-6" value="Орех" onclick="openbox('box4');">
+                                         <label for="option62">Орех</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+
+                 
+                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option72" name="level4-7" value="Древесный" onclick="openbox('box4');">
+                                         <label for="option72">Древесный</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                  
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option82" name="level4-8" value="Желтый" onclick="openbox('box4');">
+                                         <label for="option82">Желтый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option92" name="level4-9" value="Мультицвет" onclick="openbox('box4');">
+                                         <label for="option92">Мультицвет</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                 
+                 <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option102" name="level4-10" value="Интерьер в стиле арт-деко" onclick="openbox('box4');">
+                                         <label for="option102">
+                     Оранжевый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                  
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option112" name="level4-11" value="Оливковый" onclick="openbox('box4');">
+                                         <label for="option112">Оливковый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                               <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option122" name="level4-12" value="Серый" onclick="openbox('box4');">
+                                         <label for="option122">Серый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option132" name="level4-13" value="Синий" onclick="openbox('box4');">
+                                         <label for="option132">Синий</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                     
+                                     </div>
+                                 </div>
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option142" name="level4-14" value="Сиреневый" onclick="openbox('box4');">
+                                         <label for="option142">Сиреневый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option152" name="level4-15" value="Фиолетовый" onclick="openbox('box4');">
+                                         <label for="option152">Фиолетовый</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option162" name="level4-16" value="Черный" onclick="openbox('box4');">
+                                         <label for="option162">Черный</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+                                <div class="chose">
+                                     <div class="select-box check-box">
+                                         <input type="checkbox" id="option172" name="level4-17" value="Другой" onclick="openbox('box4');">
+                                         <label for="option172">Другой</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                    
+                                     </div>
+                                 </div>
+                 
+
+                 
+                             </div>
+               
+               
+<div class="row col-md-5 step4">              
+<div class="slider-box">
+    <div class="slider2">  
+        <img src="img/4/1.jpg" alt="">
+        <img src="img/4/2.jpg" alt="">
+    <img src="img/4/3.jpg" alt="">
+    <img src="img/4/4.jpg" alt="">
+    <img src="img/4/5.jpg" alt="">
+    <img src="img/4/6.jpg" alt="">
+    <img src="img/4/7.jpg" alt="">
+    <img src="img/4/8.jpg" alt="">
+    <img src="img/4/9.jpg" alt="">
+    <img src="img/4/10.jpg" alt="">
+    <img src="img/4/11.jpg" alt="">
+    <img src="img/4/12.jpg" alt="">
+    <img src="img/4/13.jpg" alt="">
+    <img src="img/4/14.jpg" alt="">
+        <img src="img/4/15.jpg" alt="">
+    <img src="img/4/16.jpg" alt="">
+    <img src="img/4/17.jpg" alt="">
+    
+    
+
+     </div>
+    <div class="prev2"></div>
+    <div class="next2"></div>
+</div> 
+</div> 
+
+          <div class="row col-md-12 mix">      
+              <div class="select-box check-box">
+                                         <input type="checkbox" id="option1_4" name="level4-18" value="Я люблю комбинированные решения" onclick="openbox('box4');">
+
+                                         <label for="option1_4">Отметьте этот пункт если любите комбинированные решения;</label>
+                                         <div class="check"><div class="inside"></div></div>
+                                      
+                                     </div>  
+                    </div>   
+                
+               
+                    <div class="box-btn">
+                 <a style="display: block;" class="main-btn back">Шаг назад</a>
+<a style="display: none;" class="main-btn final">В конец</a>
+                                 <a id="box4" style="display: none;" class="main-btn next">Следующий шаг</a>
+                                 <span class="help">4 из 14</span>
+                             </div>
+                         </div>
+                     </div>
+           
+           
+           
+                     <div class="step" style="display: none;">
+                         <h4 class="main-title-form">Ответьте на 14 простых вопросов, для получения максимально точных предложений</h4>
+                         <div class="step-box">
+                             <div class="progress">
+                                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100" style="width:28%">28%</div>
+                             </div>
+                             <span class="title-step">Шаг 5. У вас есть эскизный проект, рисунок или картинка вашей будущей кухни? <br>Загрузите ее или пропустите этот шаг.</span>
+                             <div class="row step5">
+
+
+                                 <div class="col-md-8 col-md-offset-2">
+
+                                     <div class="drop-zone">
+                                         <div class="drop-icon">
+                     <div class="" id="fileload">
+                     <img src="img/5/1.jpg" alt=""/>
+                     <img src="img/5/2.jpg" alt=""/>
+                     <img src="img/5/3.jpg" alt=""/>
+                     </div>
+                                             <!-- <span class="imgupload"><i class="fa fa-file-image-o"></i></span> -->
+                                             <span class="imgupload ok"><i class="fa fa-check"></i></span>
+                                             <span class="imgupload stop"><i class="fa fa-times"></i></span>
+                                         </div>
+                                         <button type="button" id="btnup" class="btn-upload">Выбрать фотографию</button>
+                                         <input type="file" value="1" name="file[]" id="fileup" multiple>
+
+                                         <p class="drop-info">Загрузите 1-3 фото. Размер всех не более 5 mb.<br>
+                                             Поддерживаемые форматы фотографий: jpeg, jpg, png, gif, bmp.</p>
+                                 </div>
+                 <br/>
+                 <br/>
+
+ 
+                 </ul>
+             </div>
+             </div>
+             </div>
+             </div>
+             </form>
+             </div>
+             </div>
+             </div>
+             </div>
+             </section>
+             </section>
         <section class="grishaeva">
           <div class="container">
             <div class="row">
@@ -88,6 +676,120 @@
             </div>
           </div>
         </section>
+            <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="content_title">Получите ваше идеальное предложение</h3>
+            <div class="content_text">
+              Установка автономной канализации, которая не будет потрошить
+ваши карманы на свое содержание, а прослужит на благо долгие годы.
+            </div>
+            <div class="form_content">
+              <input type="" name="" placeholder="Ваше имя">
+              <input type="" name="" placeholder="Ваш телефон">
+              <button class="top_btn">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="img/block1_img.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/block2_img.png">
+          </div>
+          <div class="col-md-6">
+            <h3>Оставив контакты, вы получите идеальное 
+            предложение по своему запросу, 
+            включающее
+            </h3>
+            <ul class="mark_list">
+              <li>Прайс-лист с ценами (возможно уточнение после выезда инженера на участок в случае изменения параметров выбора/установки)</li>
+              <li>Технические характеристики станций</li>
+              <li>Консультацию опытного специалиста</li>
+              <li>Портфолио наших работ на участках заказчиков</li>
+              <li>Варианты и схемы монтажа септика на участке (по запросу)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+          <h3 class="content_title">Монтаж за 6 часов от А до Я 
+          с реальным отзывом клиента</h3>
+          <div class="content_text">Монтаж за 6 часов от А до Я 
+          с реальным отзывом клиента</div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/block3_img.png">
+          </div>
+        </div>
+             <div class="row">
+        <div class="col-md-6">
+          <img src="img/block4_img.png">
+        </div>
+        <div class="col-md-6">
+          <h3 class="content_title">Подарок: мини-презентация</h3>
+          <ul class="mark_list">
+            <li>Виды и различия оборудования, их плюсы и минусы</li>
+            <li>Рейтинг популярных марок и моделей очистных систем</li>
+            <li>Оптимальный септик, подходящий для дома или дачи</li>
+            <li>Особенности монтажа различных видов септика на участке</li>
+            <li>Как ухаживать за септиком, чтобы он прослужил долго</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+ 
+      ]    <section class="why_us text-center">
+      <h3>Почему мы? Давайте познакомимся!</h3>
+      <span class="content_text">Чтобы больше узнать о нас, посмотрите короткое видео 
+"о нас за 3 минуты"</span>
+<!-- <img src="img/video_img.png"> -->
+<div class="video_block">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FDlvlElJ7w0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+    </section>
+
+    </section>
+
+    <section class="video_block_2">
+      <div class="container">
+        <div class="row text-center">
+        <h3>Вы указали важные для вас параметры, ответив
+на 12 простых вопросов</h3>
+<span class="content_text">Осталось получить детальный расчет стоимость автономной канализации.
+Цена железно останется неизменной на протяжении всего нашего сотрудничества.</span>
+<img src="img/video_img2.png">
+          
+        </div>
+      </div>
+    </section>
+    <section class="form_2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 form_block">
+            <h3>В течении 5-15 минут подготовим для вас предложение,
+на 100% отвечающее вашим требованиям.</h3>
+<div>Для получения предложения оставьте ваше имя и телефон.</div>
+            <div class="form_content">
+              <input type="" name="" placeholder="Ваше имя">
+              <input type="" name="" placeholder="Ваш телефон">
+              <div>
+                <button class="top_btn">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+              </div>
+              
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="img/foto_2.png">
+          </div>
+        </div>
+      </div>
+    </section>
           <section class="footer">
       <div class="container">
         <div class="row">
@@ -108,11 +810,11 @@
         </section>
     
       <!-- //-HEADER SECTION --> 
-
-    <!-- //-FOOTER -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://use.fontawesome.com/8e9e721e48.js"></script>
+<script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/8e9e721e48.js"></script>
+<script src="js/maskedinput.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html
